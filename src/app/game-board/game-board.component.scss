@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    font-family: impact;
+    color: white;
+    font-size: large;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+.categoryHeader{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: darkblue;
+    height: 60px;
+    border-color: black;
+    border-style: solid;
+    width: 200px;
+    color: white;
+    // text-align: center;
+    
+}
+
+.questionContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    border-color: black;
+    border-style: solid;
+}
+
+.questions{
+    background-color: darkblue;
+    height: 130px;
+    border-color: black;
+    border-style: solid;
+    width: 200px;
+    color: yellow;
+    text-align: center;
+    padding-top:30px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: large;
+    font-family: impact;
+}
+
+* {
+    box-sizing: border-box
+} 
+
+
+body{
+    font-family: impact;
+}
+
+.teamContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.team{
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.addTeam{
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+}

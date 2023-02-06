@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box
+}
+
+.container{
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    width: 100px;
+    margin:50px;
+}
+
+.team{
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+.score{
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    height: 50px;
+    text-align: center;
+    padding-top:15px;
+}
+
+.update{
+    // background-color: transparent;
+    // width:98px;
+    // height:25px;
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
+    display:block;
+    text-align:center;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+}
+
+.buttonContainer{
+    // background-color: #ddd;
+    // padding: 10px;
+    // margin: 0 auto;
+    // max-width: 500px;
+}

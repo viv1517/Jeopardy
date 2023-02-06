@@ -1,0 +1,32 @@
+<head>
+    <script src="https://kit.fontawesome.com/7a98f35b21.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+</head>
+
+
+
+<button (click)="print()" class="questions" *ngIf="!done">
+    <div *ngIf="!showElement && !showQuestion">${{value}} </div>
+    <div *ngIf="showElement && !showQuestion" class="question">{{question}}</div>
+    <div *ngIf="showQuestion">
+        <br>
+        <br>
+        {{answer}}
+        <br>
+        <button class="answer yes" (click)="AddPoints()">yes</button>
+        <button class="answer no" (click)="subtractPoints()">no</button>
+        <i class="fa-light fa-x"></i>
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+</button>
+
+
+<button class ="questions" *ngIf="done">
+
+</button>
+
+    
+

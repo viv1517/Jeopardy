@@ -1,0 +1,28 @@
+<body>
+
+    <div class="container">
+        <h1>Jeopardy!</h1>
+        <div class="categories">
+            
+            <div class="categoryHeader" *ngFor="let category of categories">
+                {{category}}
+            </div>
+            
+        </div>
+        <div class="questionContainer">
+            <app-question-component *ngFor="let clue of clueList" [question]="clue.question" [answer]="clue.answer" [value]="clue.value"></app-question-component>
+        </div>
+    </div>
+    <div class="teamContainer">
+        <button class="addTeam" *ngIf="numberOfTeams>1" (click)="subtractTeam()">-</button>
+        <div class="team">
+            <app-score-counter  *ngFor="let team of teams" [teamNumber]="numberOfTeams" [listOfTeams]="teams"></app-score-counter>
+        </div>
+        <button class="addTeam" *ngIf="numberOfTeams<5" (click)="addTeam()">+</button>
+    </div>
+    
+    <router-outlet></router-outlet>
+
+</body>
+
+
